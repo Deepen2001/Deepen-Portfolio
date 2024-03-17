@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #f5f3ef;
+    --secondary-color: #1e1e21;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    background-color: var(--primary-color);
+    /* font-size: 10px; */
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+p{
+    font-size: 1.8rem;
+    color: #666;
+    line-height: 1.5;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+
+/* Header start */
+.menu-list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.menu-toggle{
+    /* width: 45px; */
+    padding: 1rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 3rem;
+}
+
+.menu-container {
+    margin-top: 3rem;
+}
+/* Header end */
+
+
+/* hero name start */
+
+.hero-name h1{
+    font-size: 14rem;
+    letter-spacing: -9px;
+    font-weight: 500;
+    line-height: 1;
+}
+.location-and-scroll {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.2rem;
+    font-weight: 500;
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+}
+/* hero name end */
+
+/* hero image start */
+.hero-image {
+    height: 90vh;
+    max-height: 75vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image img{
+    object-fit: cover;
+}
+/* hero image end */
+
+/* About start */
+.about-me h2 {
+    font-size: 7rem;
+}
+
+.about-social h3 {
+    font-size: 3.2rem;
+}
+
+.about-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-social .social-wrap ul {
+    display: flex;
+}
+
+.about-social .social-wrap ul li {
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-size: 1.6rem;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: 1fr 2px .5fr;
+    justify-content: space-between;
+    column-gap: 5rem;
+}
+
+.vertical-divider {
+    height: 100%;
+    width: 2px;
+    background: var(--secondary-color);
+}
+.horizontal-divider {
+    height: 2px;
+    width: 100%;
+    background: var(--secondary-color);
+}
+
+.about-me {
+    padding: 5rem 0;
+}
+/* About end */
+
+
+/* service start */
+.home-service-grid-left .inner {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.home-service-grid {
+    display: grid;
+    grid-template-columns: .5fr 2px 1fr;
+    column-gap: 5rem;
+    padding: 5rem 0;
+}
+
+.home-service-grid-right .heading {
+    font-size: 4.4rem;
+    margin-bottom: 2rem;
+}
+
+.home-service-grid-right p {
+    font-size: 1;
+}
+
+.home-service-grid {
+    display: grid;
+    grid-template-columns: .5fr 2px 1fr;
+    column-gap: 5rem;
+    padding: 5rem 0;
+}
+
+.home-service-grid-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.home-service-grid-inner {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    column-gap: 5rem;
+}
+/* service end */
+
+@media screen and (min-width: 475px) {
+    .container{
+        max-width: 475px;
+    }
+}
+@media screen and (min-width: 640px) {
+    .container{
+        max-width: 640px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        max-width: 1024px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container{
+        max-width: 1280px;
+    }
+
+    /* hero section start */
+    .hero-image{
+        max-height: 1000px;
+    }
+    /* hero section end */
+}
+@media screen and (min-width: 1536px) {
+    .container{
+        max-width: 1536px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
